@@ -51,8 +51,14 @@ const app = new Vue (
                 }
             ]
         },
+        // Creiamo la funzione che togli al click della X l'elemento dalla lista
+        methods: {
+            removeToDo: function(index) {
+                this.todos.splice(index, 1);
+            }
+        }
     }
-)
+);
 
 // MILESTONE 2
 // Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.

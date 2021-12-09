@@ -37,7 +37,7 @@
                     <li v-for="(todo, index) in todos" class="todo" v-bind:class="{'line-through': todo.done}" > 
                         {{ todo.text }}
                         <div class="cross_icon">
-                            <i class="fas fa-times"> </i>
+                            <i @click="removeToDo(index)" class="fas fa-times"> </i>
                         </div>
                     </li>
                     <!-- END SINGLE TODO LIST -->
