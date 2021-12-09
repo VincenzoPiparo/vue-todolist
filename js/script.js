@@ -1,4 +1,3 @@
-Vue.config.devtools = true;
 
 // Descrizione:
 // Rifare l'esercizio della to do list.
@@ -20,3 +19,30 @@ Vue.config.devtools = true;
 // Bonus:
 // 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
 // 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
+
+Vue.config.devtools = true;
+const app = new Vue (
+    {
+        el: 'root',
+        data: {
+            todos: [
+                {
+                    text: 'Fare la spesa',
+                    done: true
+                },
+                {
+                    text: 'Andare in palestra',
+                    done: true
+                },
+                {
+                    text: 'Comprare le sigarette',
+                    done: false
+                },
+                {
+                    text: 'Fare rifornimento',
+                    done: true
+                }
+            ]
+        }
+    }
+)
