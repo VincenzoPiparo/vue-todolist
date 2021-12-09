@@ -20,10 +20,17 @@
 // 1- oltre al click sul pulsante, intercettare anche il tasto ENTER per aggiungere il todo alla lista
 // 2- cliccando sul testo dell'item, invertire il valore della proprietà done del todo corrispondente (se done era uguale a false, impostare true e viceversa)
 
+
+
+// MILESTONE 1
+// Stampare all'interno di una lista, un item per ogni todo.
+// Se la proprietà done è uguale a true, visualizzare il testo del todo sbarrato. 
+
+
 Vue.config.devtools = true;
 const app = new Vue (
     {
-        el: 'root',
+        el: '#root',
         data: {
             todos: [
                 {
@@ -43,6 +50,9 @@ const app = new Vue (
                     done: true
                 }
             ]
-        }
+        },
     }
 )
+
+// MILESTONE 2
+// Visualizzare a fianco ad ogni item ha una "x": cliccando su di essa, il todo viene rimosso dalla lista.
